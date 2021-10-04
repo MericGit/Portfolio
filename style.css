@@ -1,19 +1,109 @@
-h1 {
-    text-align: center;
-}
 
-h3 {
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@900&family=Inter&family=Sora&display=swap');
+
+h1,h3,p {
     text-align: center;
+    animation: fadeIn 3s linear;
+    
+}
+.nitrateHeader, {
+    font-family: 'Sora', sans-serif;
+    color: palevioletred
+}
+.Title {
+    font-family: 'Encode Sans', sans-serif;
+    color:#ffcc00;
 }
 
 p {
+    color: thistle;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.main-content {
+    font-family: 'Sora', sans-serif;
+    animation: fadeIn 3s linear;
     text-align: center;
 }
 
-ul {
-    text-align: center;
+
+
+
+
+.main-content li {
+    list-style-position: inside;
 }
-img {
-    display: block;
-    margin: 0 auto;
+.mainimg {
+    animation: fadeIn 5s linear;
+  border-radius: 10%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
 }
+
+
+#nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+#nav li {
+  float: left;
+}
+
+#nav a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+#nav a:hover {
+  background-color: #111111;
+}
+
+.tagline .b {
+    display:none;
+}
+.tagline:hover .b {
+    display: inline;
+}
+.tagline:hover .a {
+    display: none;
+}
+
+.bottom, 
+.bc {
+    color: thistle;
+    text-align: center
+}
+
+html {
+    background: linear-gradient(225deg, BlueViolet, CadetBlue,#3399ff, aquamarine);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+@keyframes fadeIn{
+    0% { opacity:0;}
+    100% { opacity:1;}
+}
+
